@@ -35,6 +35,16 @@
     @media print{.stories{margin-top:20px}.essay{padding:22px 0;break-inside:auto;background:white}.essay-part{break-inside:avoid}.essay-links{display:none}}
     .keep-word{white-space:nowrap}.step .application-group p+p{margin-top:12px}.application-group+.application-group,.step p.application-review{margin-top:28px}
     @media(max-width:760px){.application-group+.application-group,.step p.application-review{margin-top:24px}}
+    .footer-business {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--body);
+      font-size: 13px;
+      font-style: normal;
+      line-height: 1.8;
+    }
+    .footer-business > div + div { margin-top: 3px; }
   </style>
 </head>
 <body id="top">
@@ -224,7 +234,16 @@
       </section>
     </div>
   </main>
-  <footer class="footer"><div class="wrap footer-inner"><div><a href="#top" class="brand">교차 테이블</a><p>각자의 분야에서 성장하는 사람들과 가끔 나누는 편안한 대화</p></div><a href="#top" class="back-top">처음으로 <span aria-hidden="true">↑</span></a></div></footer>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <div><a href="#top" class="brand">교차 테이블</a><p>각자의 분야에서 성장하는 사람들과 가끔 나누는 편안한 대화</p></div>
+      <a href="#top" class="back-top">처음으로 <span aria-hidden="true">↑</span></a>
+    </div>
+    <address id="business-info" class="wrap footer-business" aria-label="운영 사업자 정보">
+      <div><span class="keep-word">상호(법인)명 기록관리도구R</span> · <span class="keep-word">대표자명 류제원</span></div>
+      <div><span class="keep-word">사업자등록번호 624-07-03383</span> · <span class="keep-word">사업자 주소</span> (06235) 서울특별시 강남구 논현로87길 41 (역삼동, 신일유토빌) 512호</div>
+    </address>
+  </footer>
   <script>
     (()=>{
       const menu=document.querySelector('.mobile-nav');
