@@ -262,14 +262,12 @@
   </script>
   <script>
     (() => {
-      // Set this to the owner's GoatCounter site code after the account is ready.
-      const goatCounterSite = '';
-      if (!goatCounterSite || location.hostname !== 'wpdnjs1222-netizen.github.io') return;
+      if (location.hostname !== 'wpdnjs1222-netizen.github.io') return;
 
       const script = document.createElement('script');
       script.async = true;
       script.src = 'https://gc.zgo.at/count.js';
-      script.dataset.goatcounter = 'https://' + goatCounterSite + '.goatcounter.com/count';
+      script.dataset.goatcounter = 'https://wpdnjs1222.goatcounter.com/count';
       script.dataset.goatcounterSettings = JSON.stringify({path: '/cross-table/'});
       document.head.appendChild(script);
     })();
